@@ -1,18 +1,16 @@
 const burgerMenu = document.querySelector('#burger');
 const navEl = document.querySelector('#nav');
-
+const btn = document.querySelector('#submit');
+const successContainer = document.querySelector('#success');
+const errorContainer = document.querySelector('#error');
+const inputName = document.querySelector('#name');
+const inputEmail = document.querySelector('#email');
+const textarea = document.querySelector('#message');
 
 burgerMenu.addEventListener('click', (e) => {
     burgerMenu.classList.toggle('header__burger_active')
     navEl.classList.toggle('navigation__active')
 })
-
-const btn = document.querySelector('#submit')
-const successContainer = document.querySelector('#success')
-const errorContainer = document.querySelector('#error')
-const inputName = document.querySelector('#name')
-const inputEmail = document.querySelector('#email')
-const textarea = document.querySelector('#message')
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -30,5 +28,3 @@ btn.addEventListener('click', (e) => {
         errorContainer.classList.add('form__fields-error_active')
     }
 })
-
-
